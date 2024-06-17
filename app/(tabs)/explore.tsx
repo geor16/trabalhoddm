@@ -18,6 +18,7 @@ export default function TabTwoScreen() {
       source={require('@/assets/images/eu2.png')}
       style={styles.reactLogo}
     />
+  
   }
 >
       <ThemedText style={styles.text}>Geovana Rocha, 3º INFO, RM 07708</ThemedText>
@@ -37,9 +38,9 @@ export default function TabTwoScreen() {
             source={require('@/assets/images/link.png')}
             style={styles.logo}
           />
-          <Text style={styles.buttonText}>linkedin</Text>
+          <Text style={styles.buttonText}>Linkedin</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.button3}>
+        <TouchableOpacity style={styles.button3} onPress={() => Linking.openURL('tel: +55 18 99718-7937')}>
           <Image
             source={require('@/assets/images/tele.png')}
             style={styles.logo}
@@ -110,7 +111,7 @@ const styles = StyleSheet.create({
     top: 17,
     left: 75,
     alignItems: 'center',
-    borderRadius: 150
+    borderRadius: 150,
   },
   text: {
     textAlign: 'center',
