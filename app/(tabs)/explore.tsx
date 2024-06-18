@@ -11,7 +11,6 @@ import { Linking } from 'react-native';
 export default function TabTwoScreen() {
   return (
 <ParallaxScrollView
-  style={styles.parallaxScrollView}
   headerBackgroundColor={{}}
   headerImage={
     <Image
@@ -26,77 +25,97 @@ export default function TabTwoScreen() {
         <ThemedText type="title">Redes Sociais</ThemedText>
       </ThemedView>
       <View style={styles.buttonContainer}>
-        <TouchableOpacity style={styles.button1} onPress={() => Linking.openURL('https://github.com/geor16')}>
-          <Image
-            source={require('@/assets/images/1.png')}
-            style={styles.logo}
-          />
-          <Text style={styles.buttonText}>GitHub</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button2} onPress={() => Linking.openURL('https://www.linkedin.com/in/geovana-rocha-carvalho-de-farias-575091311')}>
-          <Image
-            source={require('@/assets/images/link.png')}
-            style={styles.logo}
-          />
-          <Text style={styles.buttonText}>Linkedin</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button3} onPress={() => Linking.openURL('tel: +55 18 99718-7937')}>
-          <Image
-            source={require('@/assets/images/tele.png')}
-            style={styles.logo}
-          />
-          <Text style={styles.buttonText}>Telefone</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button4} onPress={() => Linking.openURL('https://www.youtube.com/channel/UCjbnYRAqJ71BAM5b47OAK7A')}>
-          <Image
-            source={require('@/assets/images/yt.png')}
-            style={styles.logo}
-          />
-          <Text style={styles.buttonText}>YouTube</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button5} onPress={() => Linking.openURL('https://x.com/gege_jjkg?t=8_t8Yp0Ah9oAy59sW3Lhyg&s=09')}>
-          <Image
-            source={require('@/assets/images/twt.png')}
-            style={styles.logo2}
-          />
-          <Text style={styles.buttonText}>Twitter</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button6} onPress={() => Linking.openURL('https://www.instagram.com/_gerocha16?igsh=NWpxbGI5em5pdzIz')}>
-          <Image
-            source={require('@/assets/images/insta2.png')}
-            style={styles.logo3}
-          />
-          <Text style={styles.buttonText}>Instagram</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button7} onPress={() => Linking.openURL('https://pin.it/q6e1wHMru')}>
-          <Image
-            source={require('@/assets/images/pin.png')}
-            style={styles.logo3}
-          />
-          <Text style={styles.buttonText}>Pinterest</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button8} onPress={() => Linking.openURL('https://www.facebook.com/geovana.rocha.5477?mibextid=ZbWKwL')}>
-          <Image
-            source={require('@/assets/images/face.png')}
-            style={styles.logo2}
-          />
-          <Text style={styles.buttonText}>Facebook</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button9} onPress={() => Linking.openURL('https://www.tiktok.com/@gegejjkg?_t=8nC0h1geCec&_r=1')}>
-          <Image
-            source={require('@/assets/images/ttk.png')}
-            style={styles.logo3}
-          />
-          <Text style={styles.buttonText}>TikTok</Text>
-        </TouchableOpacity>
-        <TouchableOpacity style={styles.button10} onPress={() => Linking.openURL('https://mail.google.com/mail/u/0/#inbox')}>
-          <Image
-            source={require('@/assets/images/pngegg.png')}
-            style={styles.logo2}
-          />
-          <Text style={styles.buttonText}>Gmail</Text>
-        </TouchableOpacity>
-      </View>
+  <TouchableOpacity style={styles.button1} onPress={() => Linking.openURL('https://github.com/geor16')}>
+    <Image
+      source={require('@/assets/images/1.png')}
+      style={styles.logoff}
+    />
+    <ThemedText  style={{ marginRight: 85, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>GitHub</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button2} onPress={() => Linking.openURL('https://www.linkedin.com/in/geovana-rocha-carvalho-de-farias-575091311')}>
+    <Image
+      source={require('@/assets/images/link.png')}
+      style={styles.logo}
+    />
+    <ThemedText  style={{ marginRight: 75, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>Linkedin</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button3} onPress={() => Linking.openURL('tel: +55 18 99718-7937')}>
+    <Image
+      source={require('@/assets/images/tele.png')}
+      style={styles.logo}
+    />
+    <ThemedText  style={{ marginRight: 75, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>Telefone</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button4} onPress={() => Linking.openURL('https://www.youtube.com/channel/UCjbnYRAqJ71BAM5b47OAK7A')}>
+    <Image
+      source={require('@/assets/images/yt.png')}
+      style={styles.logo}
+    />
+    <ThemedText  style={{ marginRight: 75, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>YouTube</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button5} onPress={() => Linking.openURL('https://x.com/gege_jjkg?t=8_t8Yp0Ah9oAy59sW3Lhyg&s=09')}>
+    <Image
+      source={require('@/assets/images/twt.png')}
+      style={styles.logo}
+    />
+    <ThemedText  style={{ marginRight: 83, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>Twitter</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button6} onPress={() => Linking.openURL('https://www.instagram.com/_gerocha16?igsh=NWpxbGI5em5pdzIz')}>
+    <Image
+      source={require('@/assets/images/insta2.png')}
+      style={styles.logo}
+    />
+    <ThemedText  style={{ marginRight: 60, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>Instagram</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button7} onPress={() => Linking.openURL('https://pin.it/q6e1wHMru')}>
+    <Image
+      source={require('@/assets/images/pin.png')}
+      style={styles.logo}
+    />
+    <ThemedText  style={{ marginRight: 69, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>Pinterest</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button8} onPress={() => Linking.openURL('https://www.facebook.com/geovana.rocha.5477?mibextid=ZbWKwL')}>
+    <Image
+      source={require('@/assets/images/face.png')}
+      style={styles.logo}
+    />
+    <ThemedText style={styles.textdd} style={{ marginLeft: 26, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>Facebook</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button9} onPress={() => Linking.openURL('https://www.tiktok.com/@gegejjkg?_t=8nC0h1geCec&_r=1')}>
+    <Image
+      source={require('@/assets/images/ttk.png')}
+      style={styles.logo}
+    />
+    <ThemedText  style={{ marginRight: 86, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>TikTok</Text>
+    </ThemedText>
+  </TouchableOpacity>
+  <TouchableOpacity style={styles.button10} onPress={() => Linking.openURL('https://mail.google.com/mail/u/0/#inbox')}>
+    <Image
+      source={require('@/assets/images/pngegg.png')}
+      style={styles.logo}
+    />
+    <ThemedText  style={{ marginRight: 92, paddingTop: 10, }}>
+      <Text style={styles.buttonText}>Gmail</Text>
+    </ThemedText>
+  </TouchableOpacity>
+</View>
     </ParallaxScrollView>
   );
 }
@@ -123,7 +142,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  button1: {
+    button1: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',
@@ -201,15 +220,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 20,
   },
   button8: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-between',
     backgroundColor: '#3B5A9D',
     borderRadius: 50,
     marginBottom: 15,
     width: 320,
     height: 70,
     paddingHorizontal: 20,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   button9: {
     flexDirection: 'row',
@@ -238,6 +256,12 @@ const styles = StyleSheet.create({
     height: 50,
     marginRight: 10,
   },
+  logoff: {
+    width: 50,
+    height: 50,
+    marginBottom: 9
+  },
+
   logo2: {
     width: 60,
     height: 70,
@@ -248,15 +272,17 @@ const styles = StyleSheet.create({
     height: 60,
     marginRight: 10,
   },
+  logo5: {
+    width: 50,
+    height: 50,
+    marginRight: 10,
+    paddingBottom: 30
+  },
   buttonText: {
     color: 'white',
     fontSize: 30,
     flex: 1,
     textAlign: 'center',
-    flexDirection: 'row',
     justifyContent: 'center'
-  },
-  parallaxScrollView: {
-    backgroundColor: '#F7F7F7', // adicionei um background color branco
   },
 });

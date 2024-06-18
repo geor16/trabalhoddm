@@ -20,11 +20,11 @@ export default function HomeScreen() {
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Sobre o mobile</ThemedText>
-        <ThemedText>
+        <ThemedText type="subtitle" style={styles.stepContainer}>Sobre o mobile</ThemedText>
+        <ThemedText style={styles.stepContainer}>
           Aplicativo: Redes sociais
         </ThemedText>
-        <ThemedText>
+        <ThemedText style={styles.stepContainer}>
           Trabalho de DDM, 2º bimestre
         </ThemedText>
       </ThemedView>
@@ -45,10 +45,15 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     gap: 8,
+    justifyContent: 'space-around'
   },
   stepContainer: {
     gap: 8,
     marginBottom: 8,
+    justifyContent: 'space-around',
+    fontSize: 20,
+    textAlign: 'justify'
+
   },
   reactLogo: {
     height: 250,
